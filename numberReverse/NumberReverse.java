@@ -8,12 +8,12 @@ public class NumberReverse{
 		System.out.print("Enter a number: ");
 	
 		int inputNumber = number.nextInt();
-        	int reverseNumber=0;        
+        	int reverseNumber = 0;        
         
-        	while(inputNumber > 1){
-            		int lastDigit = inputNumber%10;
-            		inputNumber/=10;            
-            		reverseNumber=reverseNumber*10+lastDigit;         
+        	while(inputNumber != 0){
+            		            
+            		reverseNumber=reverseNumber*10 + inputNumber%10; 
+            		inputNumber = inputNumber/10;     
         	}
        
         	System.out.println("Reverse number :"+reverseNumber);    
